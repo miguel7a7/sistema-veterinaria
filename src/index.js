@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import "./sass/custom.scss";
+import reportWebVitals from "./reportWebVitals";
+import { AppVeterinaria } from "./AppVeterinaria";
+import "../node_modules/bootstrap/dist/js/bootstrap.min";
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<AppVeterinaria />
+	</React.StrictMode>,
+	document.getElementById("root"),
 );
 
 // If you want to start measuring performance in your app, pass a function

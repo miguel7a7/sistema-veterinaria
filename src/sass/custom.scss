@@ -1,0 +1,25 @@
+/*=== Inicio de: Cambiando estilo de TIPO DE LETRA ===*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap");
+$font-family-sans-serif: "Oswald", sans-serif;
+
+/*=== Inicio de: Cambiando variables de colores ===*/
+$info: #021626;
+
+/*=== Inicio de: Estilos Propios ===*/
+.box_shadow {
+	box-shadow: 0 0 3px rgba($color: $info, $alpha: 30);
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*=== 
+    Para reducir linea de codigo debemos:
+    1.- instalar npm i -g purgecss
+    2.- en package json buscar la seccion script
+        "purgarcss": "purgecss --css css/custom.css --content index.html -o css/reducido.css"
+    3.- npm run purgarcss
+
+    nota: css/custom.css es el archivo a purgar 
+            --content index.html es el archivo donde esta ubicado
+            css/reducido.css es el archivo donde estara reducido
+===*/
