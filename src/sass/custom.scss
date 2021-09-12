@@ -10,6 +10,36 @@ $info: #021626;
 	box-shadow: 0 0 3px rgba($color: $info, $alpha: 30);
 }
 
+.spacing {
+	letter-spacing: 1px;
+}
+
+.menu__link {
+	:hover {
+		color: purple !important;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+/*=== Inicio de: Estilos carousel ===*/
+.carousel__container {
+	height: 100vh !important;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel__titulo {
+	display: flex;
+	flex-direction: column;
+	left: 3vh;
+	top: 50%;
+	justify-content: center;
+	position: absolute;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 /*=== 

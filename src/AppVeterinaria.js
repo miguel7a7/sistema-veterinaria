@@ -1,9 +1,10 @@
 import React from "react";
+import { RutaPrimaria } from "./routers/RutaPrimaria";
 
 export const AppVeterinaria = () => {
 	return (
-		<div className="container-fluid p-0">
-			<h2 className="d-inline box_shadow">Bienvenido</h2>
-		</div>
+		<>
+			<RutaPrimaria />
+		</>
 	);
 };
