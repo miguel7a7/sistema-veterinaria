@@ -3,15 +3,21 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
 import { InicioWeb } from "../components/siteweb/InicioWeb";
 export const RutaPrimaria = () => {
-	return (
-		<Router>
-			<div>
-				<NavBar />
+    return (
+        <Router>
+            <div>
+                <NavBar />
 
-				<Switch>
-					<Route path="/" component={InicioWeb} />
-				</Switch>
-			</div>
-		</Router>
-	);
+                <div
+                    style={{
+                        marginTop: "7rem",
+                    }}
+                >
+                    <Switch>
+                        <Route exact path="/" component={InicioWeb} />
+                    </Switch>
+                </div>
+            </div>
+        </Router>
+    );
 };

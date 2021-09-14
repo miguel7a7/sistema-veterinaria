@@ -1,32 +1,32 @@
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body::-webkit-scrollbar {
-	width: 8px;
-	/* Tamaño del scroll en vertical */
-	height: 8px;
-	/* Tamaño del scroll en horizontal */
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
 }
 
 /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
 body::-webkit-scrollbar-thumb {
-	background: #dc143c;
-	border-radius: 4px;
+    background: #021626;
+    border-radius: 4px;
 }
 
 /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
 body::-webkit-scrollbar-thumb:hover {
-	background: #ef4e6e;
-	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #062844;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Cambiamos el fondo cuando esté en active */
 body::-webkit-scrollbar-thumb:active {
-	background-color: #999999;
+    background-color: #999999;
 }

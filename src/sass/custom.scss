@@ -7,37 +7,69 @@ $info: #021626;
 
 /*=== Inicio de: Estilos Propios ===*/
 .box_shadow {
-	box-shadow: 0 0 3px rgba($color: $info, $alpha: 30);
+    box-shadow: 0 0 3px rgba($color: $info, $alpha: 30);
 }
 
 .spacing {
-	letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .menu__link {
-	:hover {
-		color: purple !important;
-	}
+    :hover {
+        color: crimson !important;
+    }
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /*=== Inicio de: Estilos carousel ===*/
 .carousel__container {
-	height: 100vh !important;
-	overflow: hidden;
-	position: relative;
+    height: 100vh !important;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel__titulo {
-	display: flex;
-	flex-direction: column;
-	left: 3vh;
-	top: 50%;
-	justify-content: center;
-	position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 3vh;
+    top: 50%;
+    justify-content: center;
+    position: absolute;
+}
+
+/*=== estilo parallax ===*/
+.main__paralax {
+    width: 100%;
+    background-image: url("../assets/images/fondo-paralax1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main__paralax::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #555660, $alpha: 0.7);
+    z-index: 200;
+}
+
+.difuminado {
+    background-color: rgba(180, 180, 180, 0.3);
+    backdrop-filter: blur(20px);
+}
+
+.text__claro {
+    z-index: 300;
+    color: #fff;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
